@@ -90,7 +90,6 @@ Usually this is the most annoying step during project creation…Spring configur
 
 Add a file applicationContext.xml into the META-INF directory of your project (_src/main/resources_), either copy from our repository or use the file below:
 <pre>
-<?xml  version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
@@ -139,7 +138,6 @@ Add a file applicationContext.xml into the META-INF directory of your project (_
 Almost done! Finally you have to make your web application accessible to REST calls AND you have to load the Spring context during startup so simply make your web.xml looking like this:
 
 <pre>
-<?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
