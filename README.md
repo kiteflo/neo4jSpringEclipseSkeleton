@@ -29,3 +29,9 @@ After adding Spring IDE plugin you can setup a new Spring project, chose __Sprin
 Ok, the next step is the most important one - use our pom.xml template as this template contains __everything you need__ in order to wire in neo4j as well as several further dependencies (JAX-RS) as there is nothing worse than starting up your tomcat and tomcat complaining about some missing jersey jars etc.. The pom.xml includes as well several dependencies to useful add-ons (JUnit testing, tomcat launcher etc.) which you might use later on.
 
 The pom.xml is directly within the root of this Git repository, simply download the pom.xml and replace the pom.xml within your project. As I'm not gonna maintain this Git project during the next 50 years you might have to update versions but for 2013/2014 you should be fine using our versions.
+
+After replacing pom run:
+<pre>mvn eclipse:clean</pre>
+
+then run:
+<mvn> eclipse:eclipse -Dwtpversion=2.0</pre>
