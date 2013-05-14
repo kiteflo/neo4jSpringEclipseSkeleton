@@ -22,7 +22,7 @@ Application stack (bottom up)
 -------------------------------------
 After adding Spring IDE plugin you can setup a new Spring project, chose __Spring Template__ and select __Spring MVC project__ as project type…name the project etc. and you will end up in a new helloNeo-project within your IDE…
 
-![Spring MVC project](https://github.com/kiteflo/neo4jSpringEclipseSkeleton/tree/Master/screenies/screenie01.png)
+![Spring MVC project](/screenies/screenie01.png)
 
 2: Wire in neo using pom.xml & Maven magic
 --------------------------------------------
