@@ -88,19 +88,9 @@ public class DummyService
 -------------------------------------------------------------
 Usually this is the most annoying step during project creation…Spring configuration can be a nightmare if you are try to challenge yourself setup the configs on your own. In case you simply wanna "get it to work" use our configs! (you might have to adapt your package structure, search for "jooik" and you will find all positions we are currently refering to our own structure)
 
-Add a file applicationContext.xml into the META-INF directory of your project (_src/main/resources_), either copy from our repository or use the file below:
+Add a file applicationContext.xml into the META-INF directory of your project (__src/main/resources__), either copy from our repository or use the file below:
 <pre>
-```
-<beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
-	xmlns:neo4j="http://www.springframework.org/schema/data/neo4j"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
-                           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
-                           http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
-                           http://www.springframework.org/schema/data/neo4j http://www.springframework.org/schema/data/neo4j/spring-neo4j-2.0.xsd">
-
+<beans >
 	<context:spring-configured />
     	<context:annotation-config />
 	<context:component-scan base-package="com.jooik.demo" />
@@ -132,7 +122,6 @@ Add a file applicationContext.xml into the META-INF directory of your project (_
 		<neo4j:config graphDatabaseService="graphDatabaseService" />
 	</beans>
 </beans>
-```
 </pre>
 
 6: Modify web.xml
