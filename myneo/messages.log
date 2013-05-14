@@ -1,0 +1,353 @@
+2013-05-14 07:58:02,515 INFO  [neo4j.txmanager]: TM new log: tm_tx_log.1
+2013-05-14 07:58:02,549 INFO  [neo4j.xafactory]: Opened logical log [/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/myneo/index/lucene.log.1] version=0, lastTxId=1 (clean)
+2013-05-14 07:58:02,553 DEBUG [neo4j.diagnostics]: --- STARTUP diagnostics START ---
+2013-05-14 07:58:02,555 DEBUG [neo4j.diagnostics]: Neo4j Kernel properties:
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: forced_kernel_id=
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: read_only=false
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: neo4j.ext.udc.host=udc.neo4j.org
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: logical_log=nioneo_logical.log
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: node_auto_indexing=false
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: intercept_committing_transactions=false
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: remote_shell_name=shell
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: cache_type=soft
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: intercept_deserialized_transactions=false
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: lucene_searcher_cache_size=2147483647
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: neo4j.ext.udc.interval=86400000
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: use_memory_mapped_buffers=true
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: rebuild_idgenerators_fast=true
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: neostore.propertystore.db.index.keys.mapped_memory=1M
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: neostore.propertystore.db.arrays.mapped_memory=1630M
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: neostore.propertystore.db.strings.mapped_memory=1438M
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: log_mapped_memory_stats_filename=mapped_memory_stats.log
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: log_mapped_memory_stats_interval=1000000
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: gcr_cache_min_log_interval=60s
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: relationship_grab_size=100
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: relationship_auto_indexing=false
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: remote_shell_read_only=false
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: node_cache_array_fraction=1.0
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: allow_store_upgrade=false
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: execution_guard_enabled=false
+2013-05-14 07:58:02,558 DEBUG [neo4j.diagnostics]: relationship_cache_array_fraction=1.0
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: remote_logging_host=127.0.0.1
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: store_dir=myneo
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: online_backup_enabled=false
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: remote_logging_port=4560
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: gc_monitor_threshold=200ms
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: array_block_size=120
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: load_kernel_extensions=true
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: neostore.relationshipstore.db.mapped_memory=2073M
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: keep_logical_logs=true
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: dump_configuration=false
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: gc_monitor_wait_time=100ms
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: neostore.nodestore.db.mapped_memory=469M
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: neo4j.ext.udc.first_delay=600000
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: remote_shell_enabled=false
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: neo4j.ext.udc.reg=unreg
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: remote_shell_port=1337
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: log_mapped_memory_stats=false
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: neo_store=neostore
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: mapped_memory_page_size=1M
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: query_cache_size=100
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: logging.threshold_for_rotation=104857600
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: neostore.propertystore.db.index.mapped_memory=1M
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: backup_slave=false
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: neostore.propertystore.db.mapped_memory=1692M
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: string_block_size=120
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: grab_file_lock=true
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: remote_logging_enabled=false
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: neo4j.ext.udc.enabled=true
+2013-05-14 07:58:02,559 DEBUG [neo4j.diagnostics]: all_stores_total_mapped_memory_size=500M
+2013-05-14 07:58:02,560 DEBUG [neo4j.diagnostics]: online_backup_port=6362
+2013-05-14 07:58:02,562 DEBUG [neo4j.diagnostics]: Diagnostics providers:
+2013-05-14 07:58:02,562 DEBUG [neo4j.diagnostics]: org.neo4j.kernel.configuration.Config
+2013-05-14 07:58:02,562 DEBUG [neo4j.diagnostics]: org.neo4j.kernel.info.DiagnosticsManager
+2013-05-14 07:58:02,562 DEBUG [neo4j.diagnostics]: SYSTEM_MEMORY
+2013-05-14 07:58:02,562 DEBUG [neo4j.diagnostics]: JAVA_MEMORY
+2013-05-14 07:58:02,562 DEBUG [neo4j.diagnostics]: OPERATING_SYSTEM
+2013-05-14 07:58:02,562 DEBUG [neo4j.diagnostics]: JAVA_VIRTUAL_MACHINE
+2013-05-14 07:58:02,562 DEBUG [neo4j.diagnostics]: CLASSPATH
+2013-05-14 07:58:02,562 DEBUG [neo4j.diagnostics]: LIBRARY_PATH
+2013-05-14 07:58:02,562 DEBUG [neo4j.diagnostics]: SYSTEM_PROPERTIES
+2013-05-14 07:58:02,562 DEBUG [neo4j.diagnostics]: NETWORK
+2013-05-14 07:58:02,563 DEBUG [neo4j.diagnostics]: System memory information:
+2013-05-14 07:58:02,569 DEBUG [neo4j.diagnostics]: Total Physical memory: 16,00 GB
+2013-05-14 07:58:02,569 DEBUG [neo4j.diagnostics]: Free Physical memory: 7,00 GB
+2013-05-14 07:58:02,570 DEBUG [neo4j.diagnostics]: Committed virtual memory: 2,95 GB
+2013-05-14 07:58:02,570 DEBUG [neo4j.diagnostics]: Total swap space: 6,00 GB
+2013-05-14 07:58:02,571 DEBUG [neo4j.diagnostics]: Free swap space: 877,46 MB
+2013-05-14 07:58:02,571 DEBUG [neo4j.diagnostics]: JVM memory information:
+2013-05-14 07:58:02,571 DEBUG [neo4j.diagnostics]: Free  memory: 72,98 MB
+2013-05-14 07:58:02,572 DEBUG [neo4j.diagnostics]: Total memory: 81,06 MB
+2013-05-14 07:58:02,572 DEBUG [neo4j.diagnostics]: Max   memory: 123,94 MB
+2013-05-14 07:58:02,572 DEBUG [neo4j.diagnostics]: Garbage Collector: ParNew: [Par Eden Space, Par Survivor Space]
+2013-05-14 07:58:02,572 DEBUG [neo4j.diagnostics]: Garbage Collector: ConcurrentMarkSweep: [Par Eden Space, Par Survivor Space, CMS Old Gen, CMS Perm Gen]
+2013-05-14 07:58:02,573 DEBUG [neo4j.diagnostics]: Memory Pool: Code Cache (Non-heap memory): committed=2,44 MB, used=1,53 MB, max=48,00 MB, threshold=0,00 B
+2013-05-14 07:58:02,573 DEBUG [neo4j.diagnostics]: Memory Pool: Par Eden Space (Heap memory): committed=16,63 MB, used=2,26 MB, max=16,63 MB, threshold=?
+2013-05-14 07:58:02,574 DEBUG [neo4j.diagnostics]: Memory Pool: Par Survivor Space (Heap memory): committed=2,06 MB, used=1,62 MB, max=2,06 MB, threshold=?
+2013-05-14 07:58:02,574 DEBUG [neo4j.diagnostics]: Memory Pool: CMS Old Gen (Heap memory): committed=62,38 MB, used=4,21 MB, max=105,25 MB, threshold=0,00 B
+2013-05-14 07:58:02,575 DEBUG [neo4j.diagnostics]: Memory Pool: CMS Perm Gen (Non-heap memory): committed=28,63 MB, used=28,52 MB, max=82,00 MB, threshold=0,00 B
+2013-05-14 07:58:02,575 DEBUG [neo4j.diagnostics]: Operating system information:
+2013-05-14 07:58:02,576 DEBUG [neo4j.diagnostics]: Operating System: Mac OS X; version: 10.8.3; arch: x86_64; cpus: 8
+2013-05-14 07:58:02,576 DEBUG [neo4j.diagnostics]: Max number of file descriptors: 10240
+2013-05-14 07:58:02,577 DEBUG [neo4j.diagnostics]: Number of open file descriptors: 148
+2013-05-14 07:58:02,578 DEBUG [neo4j.diagnostics]: Process id: 23812@Florians-MacBook-Pro.local
+2013-05-14 07:58:02,578 DEBUG [neo4j.diagnostics]: Byte order: LITTLE_ENDIAN
+2013-05-14 07:58:02,578 DEBUG [neo4j.diagnostics]: Local timezone: Europe/Zurich
+2013-05-14 07:58:02,578 DEBUG [neo4j.diagnostics]: JVM information:
+2013-05-14 07:58:02,578 DEBUG [neo4j.diagnostics]: VM Name: Java HotSpot(TM) 64-Bit Server VM
+2013-05-14 07:58:02,578 DEBUG [neo4j.diagnostics]: VM Vendor: Apple Inc.
+2013-05-14 07:58:02,578 DEBUG [neo4j.diagnostics]: VM Version: 20.45-b01-451
+2013-05-14 07:58:02,578 DEBUG [neo4j.diagnostics]: JIT compiler: HotSpot 64-Bit Tiered Compilers
+2013-05-14 07:58:02,579 DEBUG [neo4j.diagnostics]: VM Arguments: []
+2013-05-14 07:58:02,579 DEBUG [neo4j.diagnostics]: Java classpath:
+2013-05-14 07:58:02,587 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/antlr-2.7.7.jar
+2013-05-14 07:58:02,587 DEBUG [neo4j.diagnostics]:  [bootstrap] /System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks/JavaRuntimeSupport.framework/Versions/A/Resources/Java/JavaRuntimeSupport.jar
+2013-05-14 07:58:02,587 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jetty-util-6.1.25.jar
+2013-05-14 07:58:02,587 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jaxb-impl-2.2.3-1.jar
+2013-05-14 07:58:02,587 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/commons-lang-2.4.jar
+2013-05-14 07:58:02,587 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/spring-data-commons-1.5.0.RELEASE.jar
+2013-05-14 07:58:02,587 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/logback-classic-0.9.30.jar
+2013-05-14 07:58:02,587 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/asm-commons-3.2.jar
+2013-05-14 07:58:02,587 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/vecmath.jar
+2013-05-14 07:58:02,587 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jersey-server-1.8.jar
+2013-05-14 07:58:02,587 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jackson-xc-1.7.1.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jettison-1.1.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/janino-2.5.10.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jersey-spring-1.8.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/slf4j-api-1.7.1.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/commons-beanutils-core-1.8.0.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/libJ3D.jnilib
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/spring-web-3.1.1.RELEASE.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/neo4j-1.8.1.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/asm-tree-3.2.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jackson-mapper-asl-1.7.1.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jackson-core-asl-1.7.1.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/QTJava.zip
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/commons-configuration-1.6.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jansi-1.5.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jaxb-api-2.2.2.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/j3daudio.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/logback-access-0.9.30.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/libQTJNative.jnilib
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/j3dcore.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/commons-logging-1.1.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/neo4j-udc-1.8.1.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/asm-3.1.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/cglib-2.2.2.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/spring-context-3.1.1.RELEASE.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/jai_core.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jboss-logging-3.1.0.CR2.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/blueprints-neo4j-graph-1.2.jar
+2013-05-14 07:58:02,588 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/neo4j-kernel-1.8.1.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/neo4j-server-1.8.2-static-web.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jstl-1.2.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/neo4j-jmx-1.8.1.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jcl-over-slf4j-1.7.1.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/spring-asm-3.1.1.RELEASE.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/stax-api-1.0.1.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/asm-util-3.2.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jackson-jaxrs-1.7.1.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/neo4j-shell-1.8.2.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/lucene-core-3.5.0.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/groovy-1.8.5.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jersey-multipart-1.9.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/spring-data-neo4j-2.2.0.RELEASE.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/spring-test-2.5.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/commons-digester-1.8.1.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/AppleScriptEngine.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/gremlin-java-1.5.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/neo4j-cypher-dsl-1.9.M04.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/log4j-1.2.15.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/dns_sd.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/spring-beans-3.1.4.RELEASE.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/pipes-1.0.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/MRJToolkit.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/hibernate-validator-4.3.1.Final.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/neo4j-lucene-index-1.8.1.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jetty-6.1.25.jar
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/libmlib_jai.jnilib
+2013-05-14 07:58:02,589 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/neo4j-graph-matching-1.8.1.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [classpath + loader.1] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/target/dependency/webapp-runner.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jersey-json-1.8.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/classes/
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/spring-tx-3.1.4.RELEASE.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jersey-core-1.8.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/mlibwrapper_jai.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/blueprints-core-1.2.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/spring-expression-3.1.4.RELEASE.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/scala-library-2.9.1-1.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/commons-collections-3.2.1.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/libJ3DAudio.jnilib
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/libAppleScriptEngine.jnilib
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/libJ3DUtils.jnilib
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/javax.inject-1.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/spring-aspects-3.1.4.RELEASE.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/spring-context-support-3.1.1.RELEASE.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/spring-aop-3.1.1.RELEASE.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/commons-io-1.4.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/mimepull-1.6.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/j3dutils.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/gremlin-groovy-1.5.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/jsr311-api-1.1.2.r612.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/Extensions/jai_codec.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/server-api-1.8.2.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/logback-core-0.9.30.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/concurrentlinkedhashmap-lru-1.3.1.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/spring-webmvc-3.1.1.RELEASE.jar
+2013-05-14 07:58:02,590 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/neo4j-cypher-1.8.1.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/neo4j-graph-algo-1.8.1.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/commons-beanutils-1.8.0.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/neo4j-server-1.8.2.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/activation-1.1.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/aopalliance-1.0.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]:  [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/stax-api-1.0-2.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/aspectjrt-1.6.10.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/spring-core-3.1.4.RELEASE.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/validation-api-1.0.0.GA.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/bcprov-jdk16-140.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]:  [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]:  [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/asm-analysis-3.2.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]:  [loader.0] file:/Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080/work/Tomcat/localhost/_/WEB-INF/lib/rrd4j-2.0.7.jar
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]: Library path:
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]: /Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]: /Library/Java/Extensions
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]: /System/Library/Java/Extensions
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]: /usr/lib/java
+2013-05-14 07:58:02,591 DEBUG [neo4j.diagnostics]: System.properties:
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: sun.boot.library.path = /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: awt.nativeDoubleBuffering = true
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: gopherProxySet = false
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: mrj.build = 11M4406
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: path.separator = :
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: file.encoding.pkg = sun.io
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: sun.java.launcher = SUN_STANDARD
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: user.country = DE
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: sun.os.patch.level = unknown
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: user.dir = /Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: sun.jnu.encoding = MacRoman
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: user.home = /Users/tzhmufl2
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: catalina.useNaming = false
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: user.timezone = Europe/Zurich
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: file.encoding = MacRoman
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: catalina.home = /Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: user.name = tzhmufl2
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: sun.java.command = target/dependency/webapp-runner.jar target/simpsons-1.0.0-BUILD-SNAPSHOT.war
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: sun.arch.data.model = 64
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: user.language = de
+2013-05-14 07:58:02,592 DEBUG [neo4j.diagnostics]: awt.toolkit = apple.awt.CToolkit
+2013-05-14 07:58:02,593 DEBUG [neo4j.diagnostics]: catalina.base = /Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/tomcat.8080
+2013-05-14 07:58:02,593 DEBUG [neo4j.diagnostics]: file.separator = /
+2013-05-14 07:58:02,593 DEBUG [neo4j.diagnostics]: sun.io.unicode.encoding = UnicodeLittle
+2013-05-14 07:58:02,593 DEBUG [neo4j.diagnostics]: sun.cpu.endian = little
+2013-05-14 07:58:02,593 DEBUG [neo4j.diagnostics]: mrj.version = 1070.1.6.0_45-451
+2013-05-14 07:58:02,593 DEBUG [neo4j.diagnostics]: socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2013-05-14 07:58:02,593 DEBUG [neo4j.diagnostics]: ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2013-05-14 07:58:02,593 DEBUG [neo4j.diagnostics]: sun.cpu.isalist = 
+2013-05-14 07:58:02,593 DEBUG [neo4j.diagnostics]: Network information:
+2013-05-14 07:58:02,595 DEBUG [neo4j.diagnostics]: Interface en0:
+2013-05-14 07:58:02,595 DEBUG [neo4j.diagnostics]:     address: fe80:0:0:0:22c9:d0ff:fe44:c6db%4
+2013-05-14 07:58:02,595 DEBUG [neo4j.diagnostics]:     address: 10.21.106.62
+2013-05-14 07:58:02,595 DEBUG [neo4j.diagnostics]: Interface lo0:
+2013-05-14 07:58:02,595 DEBUG [neo4j.diagnostics]:     address: 0:0:0:0:0:0:0:1
+2013-05-14 07:58:02,595 DEBUG [neo4j.diagnostics]:     address: fe80:0:0:0:0:0:0:1%1
+2013-05-14 07:58:02,595 DEBUG [neo4j.diagnostics]:     address: 127.0.0.1
+2013-05-14 07:58:02,595 DEBUG [neo4j.diagnostics]: --- STARTUP diagnostics END ---
+2013-05-14 07:58:02,599 INFO  [neo4j.txmanager]: Recovery completed, all transactions have been resolved to a consistent state.
+2013-05-14 07:58:02,625 INFO  [neo4j.extension]: Extension org.neo4j.kernel.KernelExtension[kernel jmx] loaded ok
+2013-05-14 07:58:02,628 INFO  [neo4j.extension]: Extension org.neo4j.kernel.KernelExtension[kernel udc] loaded ok
+2013-05-14 07:58:02,629 INFO  [neo4j.extension]: Extension org.neo4j.kernel.KernelExtension[shell] loaded ok
+2013-05-14 07:58:02,632 DEBUG [neo4j.diagnostics]: --- STARTUP diagnostics for KernelDiagnostics:Versions START ---
+2013-05-14 07:58:02,632 DEBUG [neo4j.diagnostics]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1368511082176, id:-6345617609693648703, store version: 13561656364791302]
+2013-05-14 07:58:02,632 DEBUG [neo4j.diagnostics]: Kernel version: Neo4j - Graph Database Kernel 1.8.1
+2013-05-14 07:58:02,632 DEBUG [neo4j.diagnostics]: Neo4j component versions:
+2013-05-14 07:58:02,633 DEBUG [neo4j.diagnostics]:   Neo4j - Graph Database Kernel 1.8.1
+2013-05-14 07:58:02,633 DEBUG [neo4j.diagnostics]: --- STARTUP diagnostics for KernelDiagnostics:Versions END ---
+2013-05-14 07:58:02,635 DEBUG [neo4j.diagnostics]: --- STARTUP diagnostics for NEO_STORE_VERSIONS START ---
+2013-05-14 07:58:02,636 DEBUG [neo4j.diagnostics]: Store versions:
+2013-05-14 07:58:02,636 DEBUG [neo4j.diagnostics]: Store versions:
+2013-05-14 07:58:02,636 DEBUG [neo4j.diagnostics]:   NeoStore v0.A.0
+2013-05-14 07:58:02,636 DEBUG [neo4j.diagnostics]:   NodeStore v0.A.0
+2013-05-14 07:58:02,636 DEBUG [neo4j.diagnostics]:   RelationshipStore v0.A.0
+2013-05-14 07:58:02,636 DEBUG [neo4j.diagnostics]:   RelationshipTypeStore v0.A.0
+2013-05-14 07:58:02,636 DEBUG [neo4j.diagnostics]:   PropertyStore v0.A.0
+2013-05-14 07:58:02,636 DEBUG [neo4j.diagnostics]:   PropertyIndexStore v0.A.0
+2013-05-14 07:58:02,636 DEBUG [neo4j.diagnostics]:   StringPropertyStore v0.A.0
+2013-05-14 07:58:02,636 DEBUG [neo4j.diagnostics]:   ArrayPropertyStore v0.A.0
+2013-05-14 07:58:02,636 DEBUG [neo4j.diagnostics]: --- STARTUP diagnostics for NEO_STORE_VERSIONS END ---
+2013-05-14 07:58:02,636 DEBUG [neo4j.diagnostics]: --- STARTUP diagnostics for NEO_STORE_ID_USAGE START ---
+2013-05-14 07:58:02,636 DEBUG [neo4j.diagnostics]: Id usage:
+2013-05-14 07:58:02,636 DEBUG [neo4j.diagnostics]: Id usage:
+2013-05-14 07:58:02,637 DEBUG [neo4j.diagnostics]:   NodeStore: used=1 high=0
+2013-05-14 07:58:02,637 DEBUG [neo4j.diagnostics]:   RelationshipStore: used=0 high=-1
+2013-05-14 07:58:02,637 DEBUG [neo4j.diagnostics]:   RelationshipTypeStore: used=0 high=-1
+2013-05-14 07:58:02,637 DEBUG [neo4j.diagnostics]:   PropertyStore: used=0 high=-1
+2013-05-14 07:58:02,637 DEBUG [neo4j.diagnostics]:   PropertyIndexStore: used=0 high=-1
+2013-05-14 07:58:02,637 DEBUG [neo4j.diagnostics]:   StringPropertyStore: used=1 high=0
+2013-05-14 07:58:02,637 DEBUG [neo4j.diagnostics]:   ArrayPropertyStore: used=1 high=0
+2013-05-14 07:58:02,637 DEBUG [neo4j.diagnostics]: --- STARTUP diagnostics for NEO_STORE_ID_USAGE END ---
+2013-05-14 07:58:02,637 DEBUG [neo4j.diagnostics]: --- STARTUP diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2013-05-14 07:58:02,637 DEBUG [neo4j.diagnostics]: --- STARTUP diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2013-05-14 07:58:02,638 DEBUG [neo4j.diagnostics]: --- STARTUP diagnostics for KernelDiagnostics:StoreFiles START ---
+2013-05-14 07:58:02,638 DEBUG [neo4j.diagnostics]: Disk space on partition (Total / Free / Free %): 250140434432 / 8888971264 / 96
+Storage files: (filename : modification date - size)
+2013-05-14 07:58:02,638 DEBUG [neo4j.diagnostics]:   active_tx_log: 2013-05-14T07:58:02+0200 - 11,00 B
+2013-05-14 07:58:02,638 DEBUG [neo4j.diagnostics]:   index:
+2013-05-14 07:58:02,639 DEBUG [neo4j.diagnostics]:     lucene-store.db: 2013-05-14T07:58:02+0200 - 40,00 B
+2013-05-14 07:58:02,639 DEBUG [neo4j.diagnostics]:     lucene.log.1: 2013-05-14T07:58:02+0200 - 16,00 B
+2013-05-14 07:58:02,639 DEBUG [neo4j.diagnostics]:     lucene.log.active: 2013-05-14T07:58:02+0200 - 4,00 B
+2013-05-14 07:58:02,639 DEBUG [neo4j.diagnostics]:   - Total: 2013-05-14T07:58:02+0200 - 60,00 B
+2013-05-14 07:58:02,639 DEBUG [neo4j.diagnostics]:   lock: 2013-05-14T07:58:02+0200 - 0,00 B
+2013-05-14 07:58:02,640 DEBUG [neo4j.diagnostics]:   messages.log: 2013-05-14T07:58:02+0200 - 39,19 kB
+2013-05-14 07:58:02,640 DEBUG [neo4j.diagnostics]:   neostore: 2013-05-14T07:58:02+0200 - 54,00 B
+2013-05-14 07:58:02,640 DEBUG [neo4j.diagnostics]:   neostore.id: 2013-05-14T07:58:02+0200 - 9,00 B
+2013-05-14 07:58:02,640 DEBUG [neo4j.diagnostics]:   neostore.nodestore.db: 2013-05-14T07:58:02+0200 - 9,00 B
+2013-05-14 07:58:02,640 DEBUG [neo4j.diagnostics]:   neostore.nodestore.db.id: 2013-05-14T07:58:02+0200 - 9,00 B
+2013-05-14 07:58:02,641 DEBUG [neo4j.diagnostics]:   neostore.propertystore.db: 2013-05-14T07:58:02+0200 - 0,00 B
+2013-05-14 07:58:02,641 DEBUG [neo4j.diagnostics]:   neostore.propertystore.db.arrays: 2013-05-14T07:58:02+0200 - 128,00 B
+2013-05-14 07:58:02,641 DEBUG [neo4j.diagnostics]:   neostore.propertystore.db.arrays.id: 2013-05-14T07:58:02+0200 - 9,00 B
+2013-05-14 07:58:02,641 DEBUG [neo4j.diagnostics]:   neostore.propertystore.db.id: 2013-05-14T07:58:02+0200 - 9,00 B
+2013-05-14 07:58:02,641 DEBUG [neo4j.diagnostics]:   neostore.propertystore.db.index: 2013-05-14T07:58:02+0200 - 0,00 B
+2013-05-14 07:58:02,642 DEBUG [neo4j.diagnostics]:   neostore.propertystore.db.index.id: 2013-05-14T07:58:02+0200 - 9,00 B
+2013-05-14 07:58:02,642 DEBUG [neo4j.diagnostics]:   neostore.propertystore.db.index.keys: 2013-05-14T07:58:02+0200 - 38,00 B
+2013-05-14 07:58:02,642 DEBUG [neo4j.diagnostics]:   neostore.propertystore.db.index.keys.id: 2013-05-14T07:58:02+0200 - 9,00 B
+2013-05-14 07:58:02,642 DEBUG [neo4j.diagnostics]:   neostore.propertystore.db.strings: 2013-05-14T07:58:02+0200 - 128,00 B
+2013-05-14 07:58:02,643 DEBUG [neo4j.diagnostics]:   neostore.propertystore.db.strings.id: 2013-05-14T07:58:02+0200 - 9,00 B
+2013-05-14 07:58:02,643 DEBUG [neo4j.diagnostics]:   neostore.relationshipstore.db: 2013-05-14T07:58:02+0200 - 0,00 B
+2013-05-14 07:58:02,643 DEBUG [neo4j.diagnostics]:   neostore.relationshipstore.db.id: 2013-05-14T07:58:02+0200 - 9,00 B
+2013-05-14 07:58:02,643 DEBUG [neo4j.diagnostics]:   neostore.relationshiptypestore.db: 2013-05-14T07:58:02+0200 - 0,00 B
+2013-05-14 07:58:02,643 DEBUG [neo4j.diagnostics]:   neostore.relationshiptypestore.db.id: 2013-05-14T07:58:02+0200 - 9,00 B
+2013-05-14 07:58:02,644 DEBUG [neo4j.diagnostics]:   neostore.relationshiptypestore.db.names: 2013-05-14T07:58:02+0200 - 38,00 B
+2013-05-14 07:58:02,644 DEBUG [neo4j.diagnostics]:   neostore.relationshiptypestore.db.names.id: 2013-05-14T07:58:02+0200 - 9,00 B
+2013-05-14 07:58:02,644 DEBUG [neo4j.diagnostics]:   nioneo_logical.log.1: 2013-05-14T07:58:02+0200 - 16,00 B
+2013-05-14 07:58:02,644 DEBUG [neo4j.diagnostics]:   nioneo_logical.log.active: 2013-05-14T07:58:02+0200 - 4,00 B
+2013-05-14 07:58:02,644 DEBUG [neo4j.diagnostics]:   tm_tx_log.1: 2013-05-14T07:58:02+0200 - 0,00 B
+2013-05-14 07:58:02,644 DEBUG [neo4j.diagnostics]: --- STARTUP diagnostics for KernelDiagnostics:StoreFiles END ---
+2013-05-14 07:58:02,646 INFO  [neo4j]: Started - database is now available
+2013-05-14 07:58:02,646 INFO  [neo4j]: GC Monitor started. 
+2013-05-14 07:58:03,752 DEBUG [neo4j.diagnostics]: --- SERVER STARTUP START ---
+2013-05-14 07:58:03,753 DEBUG [neo4j.diagnostics]: --- STARTUP diagnostics for org.neo4j.server.configuration.Configurator START ---
+2013-05-14 07:58:03,753 DEBUG [neo4j.diagnostics]: Server configuration:
+2013-05-14 07:58:03,753 DEBUG [neo4j.diagnostics]: org.neo4j.server.database.location = /Users/tzhmufl2/development/repositories/neo4jSpringEclipseSkeleton/myneo
+2013-05-14 07:58:03,753 DEBUG [neo4j.diagnostics]: --- STARTUP diagnostics for org.neo4j.server.configuration.Configurator END ---
+2013-05-14 07:58:03,768 DEBUG [neo4j.diagnostics]: Mounted discovery module (org.neo4j.server.rest.discovery) at: /
+2013-05-14 07:58:03,772 DEBUG [neo4j.diagnostics]: Mounted REST API at: /db/data
+2013-05-14 07:58:03,773 DEBUG [neo4j.diagnostics]: Mounted management API at: /db/manage
+2013-05-14 07:58:03,836 DEBUG [neo4j.diagnostics]: Mounted webadmin at: /webadmin
+2013-05-14 07:58:05,291 DEBUG [neo4j.diagnostics]: Server started on: http://localhost:7474/
+2013-05-14 07:58:05,291 DEBUG [neo4j.diagnostics]: --- SERVER STARTUP END ---

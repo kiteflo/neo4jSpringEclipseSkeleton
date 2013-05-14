@@ -83,3 +83,126 @@ public class DummyService
     }
 }
 </pre>
+
+5: Create applicationContext.xml
+-------------------------------------------------------------
+Usually this is the most annoying step during project creation…Spring configuration can be a nightmare if you are try to challenge yourself setup the configs on your own. In case you simply wanna "get it to work" use our configs! (you might have to adapt your package structure, search for "jooik" and you will find all positions we are currently refering to our own structure)
+
+Add a file applicationContext.xml into the META-INF directory of your project (_src/main/resources_), either copy from our repository or use the file below:
+<pre>
+<?xml  version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:neo4j="http://www.springframework.org/schema/data/neo4j"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+                           http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                           http://www.springframework.org/schema/data/neo4j http://www.springframework.org/schema/data/neo4j/spring-neo4j-2.0.xsd">
+
+	<context:spring-configured />
+    	<context:annotation-config />
+	<context:component-scan base-package="com.jooik.demo" />
+
+	<neo4j:repositories base-package="com.jooik.demo.repositories" />
+
+	<mvc:annotation-driven />
+
+	<bean id="jspViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<!-- Cypher query server... -->
+	<bean id="serverWrapper" class="org.neo4j.server.WrappingNeoServerBootstrapper" init-method="start" destroy-method="stop">
+	   <constructor-arg ref="graphDatabaseService"/>
+	</bean>
+	
+	<tx:annotation-driven />
+
+	<beans profile="default">
+		<neo4j:config storeDirectory="myneo" />
+	</beans>
+
+	<beans profile="prod">
+		<neo4j:config graphDatabaseService="graphDatabaseService" />
+	</beans>
+</beans>
+</pre>
+
+6: Modify web.xml
+------------------------------------------
+Almost done! Finally you have to make your web application accessible to REST calls AND you have to load the Spring context during startup so simply make your web.xml looking like this:
+
+<pre>
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<!-- The definition of the Root Spring Container shared by all Servlets 
+		and Filters -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:META-INF/applicationContext.xml</param-value>
+	</context-param>
+
+	<!-- Creates the Spring Container shared by all Servlets and Filters -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- Processes application requests -->
+	<servlet>
+		<servlet-name>appServlet</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>appServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Jersey REST Service</servlet-name>
+		<servlet-class>com.sun.jersey.spi.spring.container.servlet.SpringServlet</servlet-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>com.jooik.demo.rest.v0</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Jersey REST Service</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+
+</web-app>
+</pre>
+
+7: Enjoy Java coding!
+-----------------------------------------
+Now you've setup the boiler plate so simply start coding!!!
+
+8: Cool things…
+-----------------------------------------
+Somewhere we've wired in a jsimione dependency…this is cool stuff and you can ship your project to anybody without forcing him/her to install a tomcat. You can simply checkout our project from the repository and fire up a tomcat container running the whole stack using the following commands:
+
+<pre>
+mvn clean install
+</pre>
+
+<pre>
+java -jar target/dependency/webapp-runner.jar target/*.war
+</pre>
+
+P.S.: and the Neo console of course can be accessed as well thanx to clever dependency configuration! localhost:7474...

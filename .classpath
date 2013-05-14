@@ -60,22 +60,15 @@
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/org/springframework/spring-tx/3.1.4.RELEASE/spring-tx-3.1.4.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-tx/3.1.4.RELEASE/spring-tx-3.1.4.RELEASE-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" sourcepath="M2_REPO/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-aop/3.2.2.RELEASE/spring-aop-3.2.2.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-aop/3.2.2.RELEASE/spring-aop-3.2.2.RELEASE-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/Users/tzhmufl2/.m2/repository/org/springframework/spring-aop/3.2.2.RELEASE/spring-aop-3.2.2.RELEASE-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-aop/3.1.1.RELEASE/spring-aop-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-aop/3.1.1.RELEASE/spring-aop-3.1.1.RELEASE-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-asm/3.1.1.RELEASE/spring-asm-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-asm/3.1.1.RELEASE/spring-asm-3.1.1.RELEASE-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/spring-beans/3.1.4.RELEASE/spring-beans-3.1.4.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-beans/3.1.4.RELEASE/spring-beans-3.1.4.RELEASE-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/spring-core/3.1.4.RELEASE/spring-core-3.1.4.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-core/3.1.4.RELEASE/spring-core-3.1.4.RELEASE-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.1/commons-logging-1.1.jar" sourcepath="M2_REPO/commons-logging/commons-logging/1.1/commons-logging-1.1-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-context/3.2.2.RELEASE/spring-context-3.2.2.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-context/3.2.2.RELEASE/spring-context-3.2.2.RELEASE-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/Users/tzhmufl2/.m2/repository/org/springframework/spring-context/3.2.2.RELEASE/spring-context-3.2.2.RELEASE-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-context/3.1.1.RELEASE/spring-context-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-context/3.1.1.RELEASE/spring-context-3.1.1.RELEASE-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/spring-expression/3.1.4.RELEASE/spring-expression-3.1.4.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-expression/3.1.4.RELEASE/spring-expression-3.1.4.RELEASE-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/spring-aspects/3.1.4.RELEASE/spring-aspects-3.1.4.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-aspects/3.1.4.RELEASE/spring-aspects-3.1.4.RELEASE-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-context-support/3.1.4.RELEASE/spring-context-support-3.1.4.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-context-support/3.1.4.RELEASE/spring-context-support-3.1.4.RELEASE-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-context-support/3.1.1.RELEASE/spring-context-support-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-context-support/3.1.1.RELEASE/spring-context-support-3.1.1.RELEASE-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/aspectj/aspectjrt/1.6.10/aspectjrt-1.6.10.jar" sourcepath="M2_REPO/org/aspectj/aspectjrt/1.6.10/aspectjrt-1.6.10-sources.jar">
     <attributes>
       <attribute value="jar:file:/Users/tzhmufl2/.m2/repository/org/aspectj/aspectjrt/1.6.10/aspectjrt-1.6.10-javadoc.jar!/" name="javadoc_location"/>
@@ -163,16 +156,8 @@
       <attribute value="jar:file:/Users/tzhmufl2/.m2/repository/junit/junit/4.4/junit-4.4-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-webmvc/3.2.2.RELEASE/spring-webmvc-3.2.2.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-webmvc/3.2.2.RELEASE/spring-webmvc-3.2.2.RELEASE-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/Users/tzhmufl2/.m2/repository/org/springframework/spring-webmvc/3.2.2.RELEASE/spring-webmvc-3.2.2.RELEASE-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-web/3.2.2.RELEASE/spring-web-3.2.2.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-web/3.2.2.RELEASE/spring-web-3.2.2.RELEASE-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/Users/tzhmufl2/.m2/repository/org/springframework/spring-web/3.2.2.RELEASE/spring-web-3.2.2.RELEASE-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-webmvc/3.1.1.RELEASE/spring-webmvc-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-webmvc/3.1.1.RELEASE/spring-webmvc-3.1.1.RELEASE-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-web/3.1.1.RELEASE/spring-web-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-web/3.1.1.RELEASE/spring-web-3.1.1.RELEASE-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.15/log4j-1.2.15.jar" sourcepath="M2_REPO/log4j/log4j/1.2.15/log4j-1.2.15-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/cglib/cglib/2.2.2/cglib-2.2.2.jar" sourcepath="M2_REPO/cglib/cglib/2.2.2/cglib-2.2.2-sources.jar">
     <attributes>
