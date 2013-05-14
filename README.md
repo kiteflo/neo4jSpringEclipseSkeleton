@@ -34,4 +34,4 @@ After replacing pom run:
 <pre>mvn eclipse:clean</pre>
 
 then run:
-<mvn> eclipse:eclipse -Dwtpversion=2.0</pre>
+<pre>mvn eclipse:eclipse -Dwtpversion=2.0</pre>
