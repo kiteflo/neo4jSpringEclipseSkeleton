@@ -90,7 +90,7 @@ Usually this is the most annoying step during project creation…Spring configur
 
 Add a file applicationContext.xml into the META-INF directory of your project (_src/main/resources_), either copy from our repository or use the file below:
 <pre>
-<code>
+```
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
@@ -132,7 +132,7 @@ Add a file applicationContext.xml into the META-INF directory of your project (_
 		<neo4j:config graphDatabaseService="graphDatabaseService" />
 	</beans>
 </beans>
-</code>
+```
 </pre>
 
 6: Modify web.xml
