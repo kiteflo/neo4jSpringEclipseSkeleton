@@ -13,3 +13,4 @@ Environment
 
 1: Create Spring MVC project
 -------------------------------------
+After adding Spring IDE plugin you can setup a new Spring project, chose **bold** Spring Template **bold** and select **bold** Spring MVC project **bold**.
