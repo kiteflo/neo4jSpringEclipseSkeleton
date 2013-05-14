@@ -13,4 +13,4 @@ Environment
 
 1: Create Spring MVC project
 -------------------------------------
-After adding Spring IDE plugin you can setup a new Spring project, chose **bold** Spring Template **bold** and select **bold** Spring MVC project **bold**.
+After adding Spring IDE plugin you can setup a new Spring project, chose **Spring Template ** and select **Spring MVC project** as project type…name the project etc. and you will end up in a new helloNeo-project within your IDE...
