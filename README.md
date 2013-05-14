@@ -99,6 +99,37 @@ Add a file applicationContext.xml into the META-INF directory of your project ( 
                            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
                            http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
                            http://www.springframework.org/schema/data/neo4j http://www.springframework.org/schema/data/neo4j/spring-neo4j-2.0.xsd">
+
+	<context:spring-configured />
+    	<context:annotation-config />
+	<context:component-scan base-package="com.jooik.demo" />
+
+	<neo4j:repositories base-package="com.jooik.demo.repositories" />
+
+	<mvc:annotation-driven />
+
+	<bean id="jspViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<!-- Cypher query server... -->
+	<bean id="serverWrapper" class="org.neo4j.server.WrappingNeoServerBootstrapper" init-method="start" destroy-method="stop">
+	   <constructor-arg ref="graphDatabaseService"/>
+	</bean>
+	
+	<tx:annotation-driven />
+
+	<beans profile="default">
+		<neo4j:config storeDirectory="myneo" />
+	</beans>
+
+	<beans profile="prod">
+		<neo4j:config graphDatabaseService="graphDatabaseService" />
+	</beans>
 </beans>
 </pre>
 
