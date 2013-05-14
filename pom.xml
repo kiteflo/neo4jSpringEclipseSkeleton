@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.kiteflo</groupId>
-	<artifactId>simpsons</artifactId>
-	<name>simpsons</name>
+	<artifactId>helloNeo</artifactId>
+	<name>helloNeo</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
@@ -13,6 +13,23 @@
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 		<jersey.version>1.8</jersey.version>
+		<org.springframework.data.version>2.2.0.RELEASE</org.springframework.data.version>
+		<org.springframework.spring-test>2.5</org.springframework.spring-test>
+		<log4j.version>1.2.15</log4j.version>
+		<javax.inject.version>1</javax.inject.version>
+		<javax.servlet.version>2.5</javax.servlet.version>
+		<javax.servlet.jsp.version>2.1</javax.servlet.jsp.version>
+		<javax.servlet.jstl.version>1.2</javax.servlet.jstl.version>
+		<junit.version>4.4</junit.version>
+		<cglib.version>2.2.2</cglib.version>
+		<org.hibernate.version>4.3.1.Final</org.hibernate.version>
+		<com.github.jsimone.version>7.0.22.3</com.github.jsimone.version>
+		<org.neo4j.app.version>1.8.2</org.neo4j.app.version>
+		<maven-eclipse-plugin.version>2.9</maven-eclipse-plugin.version>
+		<org.apache.maven.plugins.version>2.5.1</org.apache.maven.plugins.version>
+		<org.codehaus.mojo>1.2.1</org.codehaus.mojo>
+		<org.apache.maven.plugins.maven-dependency-plugin>2.4</org.apache.maven.plugins.maven-dependency-plugin>
+		<org.apache.maven.plugins.maven-surefire-plugin>2.6</org.apache.maven.plugins.maven-surefire-plugin>
 	</properties>
 
 	<dependencies>
@@ -20,39 +37,33 @@
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
 			<artifactId>jersey-core</artifactId>
-			<version>1.8</version>
+			<version>${jersey.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
 			<artifactId>jersey-server</artifactId>
-			<version>1.8</version>
+			<version>${jersey.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
 			<artifactId>jersey-json</artifactId>
-			<version>1.8</version>
+			<version>${jersey.version}</version>
 		</dependency>
 
 		<!-- SDN -->
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-neo4j</artifactId>
-			<version>2.2.0.RELEASE</version>
+			<version>${org.springframework.data.version}</version>
 		</dependency>
 
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-			<version>3.2.2.RELEASE</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>2.5</version>
+			<version>${org.springframework.spring-test}</version>
 		</dependency>
 
 		<!-- Spring -->
@@ -85,7 +96,7 @@
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.15</version>
+			<version>${log4j.version}</version>
 			<exclusions>
 				<exclusion>
 					<groupId>javax.mail</groupId>
@@ -110,46 +121,46 @@
 		<dependency>
 			<groupId>javax.inject</groupId>
 			<artifactId>javax.inject</artifactId>
-			<version>1</version>
+			<version>${javax.inject.version}</version>
 		</dependency>
 
 		<!-- Servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
+			<version>${javax.servlet.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
-			<version>2.1</version>
+			<version>${javax.servlet.jsp.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
-			<version>1.2</version>
+			<version>${javax.servlet.jstl.version}</version>
 		</dependency>
 
 		<!-- additional libraries required by neo/spring... -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.4</version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib</artifactId>
-			<version>2.2.2</version>
+			<version>${cglib.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
-			<version>4.3.1.Final</version>
+			<version>${org.hibernate.version}</version>
 		</dependency>
 
 
@@ -157,7 +168,7 @@
 		<dependency>
 			<groupId>com.github.jsimone</groupId>
 			<artifactId>webapp-runner</artifactId>
-			<version>7.0.22.3</version>
+			<version>${com.github.jsimone.version}</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -196,13 +207,13 @@
 		<dependency>
 			<groupId>org.neo4j.app</groupId>
 			<artifactId>neo4j-server</artifactId>
-			<version>1.8.2</version>
+			<version>${org.neo4j.app.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.neo4j.app</groupId>
 			<artifactId>neo4j-server</artifactId>
 			<classifier>static-web</classifier>
-			<version>1.8.2</version>
+			<version>${org.neo4j.app.version}</version>
 		</dependency>
 
 	</dependencies>
@@ -210,7 +221,7 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-eclipse-plugin</artifactId>
-				<version>2.9</version>
+				<version>${maven-eclipse-plugin.version}</version>
 				<configuration>
 					<additionalProjectnatures>
 						<projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
@@ -225,10 +236,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.5.1</version>
+				<version>${org.apache.maven.plugins.version}</version>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
 					<compilerArgument>-Xlint:all</compilerArgument>
 					<showWarnings>true</showWarnings>
 					<showDeprecation>true</showDeprecation>
@@ -237,7 +248,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
-				<version>1.2.1</version>
+				<version>${org.codehaus.mojo}</version>
 				<configuration>
 					<mainClass>org.test.int1.Main</mainClass>
 				</configuration>
@@ -246,7 +257,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
-				<version>2.4</version>
+				<version>${org.apache.maven.plugins.maven-dependency-plugin}</version>
 				<executions>
 					<execution>
 						<phase>package</phase>
@@ -258,7 +269,7 @@
 								<artifactItem>
 									<groupId>com.github.jsimone</groupId>
 									<artifactId>webapp-runner</artifactId>
-									<version>7.0.22.3</version>
+									<version>${com.github.jsimone.version}</version>
 									<destFileName>webapp-runner.jar</destFileName>
 								</artifactItem>
 							</artifactItems>
@@ -271,12 +282,12 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.6</version>
+				<version>${org.apache.maven.plugins.maven-surefire-plugin}</version>
 				<dependencies>
 					<dependency>
 						<groupId>org.apache.maven.surefire</groupId>
 						<artifactId>surefire-junit47</artifactId>
-						<version>2.6</version>
+						<version>${org.apache.maven.plugins.maven-surefire-plugin}</version>
 					</dependency>
 				</dependencies>
 				<configuration>

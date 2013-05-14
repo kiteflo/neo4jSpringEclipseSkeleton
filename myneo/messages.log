@@ -351,3 +351,7 @@ Storage files: (filename : modification date - size)
 2013-05-14 07:58:03,836 DEBUG [neo4j.diagnostics]: Mounted webadmin at: /webadmin
 2013-05-14 07:58:05,291 DEBUG [neo4j.diagnostics]: Server started on: http://localhost:7474/
 2013-05-14 07:58:05,291 DEBUG [neo4j.diagnostics]: --- SERVER STARTUP END ---
+2013-05-14 08:37:29,020 INFO  [neo4j]: GC Monitor: Application threads blocked for an additional 519143ms [total block time: 519.143s]
+2013-05-14 08:52:30,031 INFO  [neo4j]: GC Monitor: Application threads blocked for an additional 850475ms [total block time: 1369.618s]
+2013-05-14 08:52:44,090 INFO  [neo4j]: GC Monitor: Application threads blocked for an additional 11430ms [total block time: 1381.048s]
+2013-05-14 09:21:46,357 INFO  [neo4j]: GC Monitor: Application threads blocked for an additional 184ms [total block time: 1381.232s]
