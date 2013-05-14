@@ -1,5 +1,5 @@
-neo4j - Spring - REST - Kickstart!
-=====================================
+neo4j - Spring - REST - Eclipse - Kickstart!
+===============================================
 
 Ok…setting up a simple neo4j standalone project is pretty straightforward…but quite frequently there are some old fashioned Java-Spring-Dinosaurs trying to create "the perfect Eclipse project" enabling these guys to do everything within their IDE. And then you usually end up in POM-hunting, applicationContext.xml-tuning, web.xml modifications etc. and tudaloo: a few hours have passed until you lean back and finally start focusing on your Java services instead of configuring your project/IDE…
 
@@ -22,7 +22,7 @@ Application stack (bottom up)
 -------------------------------------
 After adding Spring IDE plugin you can setup a new Spring project, chose __Spring Template__ and select __Spring MVC project__ as project type…name the project etc. and you will end up in a new helloNeo-project within your IDE…
 
-![alt tag](https://github.com/kiteflo/neo4jSpringEclipseSkeleton/blob/Master/screenies/Bildschirmfoto%202013-05-14%20um%2006.43.39.png)
+![Spring MVC project](https://github.com/kiteflo/neo4jSpringEclipseSkeleton/blob/Master/screenies/screenie01.png)
 
 2: Wire in neo using pom.xml & Maven magic
 --------------------------------------------
